@@ -255,3 +255,22 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+div.columns li:nth-child(2) {
+  background-color: gray;
+}
+
+@media (width < 900px) {
+  main .swap-layout .cards li {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.cards > ul > li > .cards-card-body > p {
+  color: red;
+}
+
+html[dir="rtl"] .cards > ul > li > .cards-card-body > p {
+  color: green;
+}
