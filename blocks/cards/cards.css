@@ -25,3 +25,27 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+@media (width < 900px) {
+  main .swap-layout .cards li {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.cards > ul > li > .cards-card-body > p {
+  color: red;
+}
+
+html[dir="rtl"] .cards > ul > li > .cards-card-body > p {
+  color: green;
+}
+
+.cards-card-body {
+  p {
+    font-size: 1.6rem;
+    strong {
+      font-size: 2rem;
+    }
+  }
+}
